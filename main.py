@@ -33,6 +33,7 @@ vectorizer.fit(training_corpus)
 #Transforming the words in the training list to numbers
 X = vectorizer.transform(training_corpus)
 #Sending the number versions of the list to an array
+#The rows are the reviews and the columns are the vocabulary, with one column for each word of the vocabulary
 X_train = X.toarray()
 #Repeating the same process of vectorizing the test list(with the user's review) and sending it to an array
 X_test = vectorizer.transform(test_corpus)
